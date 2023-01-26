@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class parabola_test2 : MonoBehaviour
 {
-    public float bullet_speed;
-    Vector2 mouse_direction;
+
+    public Vector2 mouse_direction;
     public GameObject allow;
     public GameObject bullet;
     // Start is called before the first frame update
@@ -24,10 +24,7 @@ public class parabola_test2 : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject _bullet =Instantiate(bullet, allow.transform.position, allow.transform.rotation);
-            Rigidbody2D _bullet_rigid = _bullet.GetComponent<Rigidbody2D>();
-
-            _bullet_rigid.AddForce(new Vector2(mouse_direction.x, mouse_direction.y) * bullet_speed, ForceMode2D.Impulse);
+            Instantiate(bullet, allow.transform.position, allow.transform.rotation);
         }
             
     }

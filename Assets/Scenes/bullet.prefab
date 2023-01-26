@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 143110788169032782}
   - component: {fileID: 143110788169032781}
   - component: {fileID: 143110788169032780}
-  - component: {fileID: 143110788169032776}
+  - component: {fileID: 6033733273195115278}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -102,7 +102,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -124,7 +124,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &143110788169032776
+--- !u!114 &6033733273195115278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,4 +136,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a8a673f99481148a2644f557b92f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet_speed: 10
+  bullet_speed: 2
