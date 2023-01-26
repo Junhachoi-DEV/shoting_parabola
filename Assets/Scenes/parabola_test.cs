@@ -29,8 +29,7 @@ public class parabola_test : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject go =Instantiate(bullet);
-            go.transform.position = turret.transform.position;
+            Instantiate(bullet, turret.transform.position, turret.transform.rotation);
         }
     }
 }
